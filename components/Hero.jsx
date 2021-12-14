@@ -2,18 +2,18 @@ import React from 'react';
 
 function Hero(props) {
       return (
-            <div>
-                  <div className="px-4 py-16 mx-auto align-middle sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+            <div className='bg-gray-900'>
+                  <div className="  px-4 py-16 mx-auto  sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="grid gap-10  lg:grid-cols-2">
         <div className="flex flex-col justify-center lg:pr-10">
     
-          <h5 className="mb-4 text-4xl font-extrabold leading-none">
+          <h5 className="mb-4 text-4xl text-white font-extrabold leading-none">
             One Platform to explore, collect
-            <br className="hidden md:block" />
+            <br className="text-white hidden md:block" />
             and sell NFTs{' '}
             
           </h5>
-          <p className="mb-6 text-gray-900">
+          <p className="mb-6 text-white">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
           Eveniet dolorem blanditiis ad perferendis, labore delectus dolor adipisicing elit sit amet, 
           adipisicing elit. Eveniet adipisicing elit.
@@ -22,10 +22,10 @@ function Hero(props) {
           </p>
           <hr className="mb-5 border-gray-300" />
           <div className="flex items-center space-x-4">
-           <button className='bg-gray-900 px-10 py-2 rounded-md text-white text-base'>
+           <button className='bg-blue-400 px-10 py-2 rounded-md text-white text-base'>
             Discover
            </button>
-           <button className='bg-gray-900 px-10 py-2 rounded-md text-white text-base'>
+           <button className='bg-blue-400 px-10 py-2 rounded-md text-white text-base'>
             Create
            </button>
           </div>
