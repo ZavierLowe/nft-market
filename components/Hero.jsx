@@ -44,7 +44,7 @@ function Hero(props) {
 
               </div>
               <div className=''>
-              <img className='' src="https://www.thestreet.com/.image/t_share/MTgyMDU5NDcwMTc4NzU1NzE1/boredape1.jpg" alt="" />
+              <img className='' src="https://pbs.twimg.com/media/E4Lk6qDXIAA9_Z2.png" alt="" />
 
               </div>
          
