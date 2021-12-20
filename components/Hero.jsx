@@ -2,30 +2,30 @@ import React from 'react';
 
 function Hero(props) {
       return (
-            <div className='bg-gray-900'>
+            <div className='bg-gray-600 '>
                   <div className="  px-4 py-16 mx-auto  sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="grid gap-10  lg:grid-cols-2">
         <div className="flex flex-col justify-center lg:pr-10">
     
-          <h5 className="mb-4 text-4xl text-white font-extrabold leading-none">
+          <h5 className="mb-4 text-6xl text-white font-extrabold leading-none">
             One Platform to explore, collect
             <br className="text-white hidden md:block" />
             and sell NFTs{' '}
             
           </h5>
-          <p className="mb-6 text-white">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-          Eveniet dolorem blanditiis ad perferendis, labore delectus dolor adipisicing elit sit amet, 
-          adipisicing elit. Eveniet adipisicing elit.
+          <p className="mb-6 text-white text-md">
+          Repper is an NFT market is a shared
+          smart contract which is used by multiple 
+          websites to provide the users the best possible experience
 
 
           </p>
           <hr className="mb-5 border-gray-300" />
           <div className="flex items-center space-x-4">
-           <button className='bg-blue-400 px-10 py-2 rounded-md text-white text-base'>
+           <button className='bg-violet-800 px-10 py-2 rounded-md text-white text-lg font-bold'>
             Discover
            </button>
-           <button className='bg-blue-400 px-10 py-2 rounded-md text-white text-base'>
+           <button className='bg-gradient-to-r from-pink-700 to-violet-600 px-10 py-2 rounded-md text-white text-lg font-bold hover:from-pink-500 hover:to-yellow-500'>
             Create
            </button>
           </div>
@@ -51,6 +51,7 @@ function Hero(props) {
         </div>
       </div>
     </div>
+    
             </div>
       );
 }
