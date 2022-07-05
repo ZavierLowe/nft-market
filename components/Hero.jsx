@@ -2,8 +2,8 @@ import React from 'react';
 
 function Hero(props) {
       return (
-            <div className='bg-gray-600 '>
-                  <div className="  px-4 py-16 mx-auto  sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+            <div className='bg-gray-800'>
+                  <div className="  px-4 py-16 mx-auto  sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-36">
       <div className="grid gap-10  lg:grid-cols-2">
         <div className="flex flex-col justify-center lg:pr-10">
     
@@ -32,19 +32,19 @@ function Hero(props) {
         </div>
         <div className='grid grid-cols-2 gap-4'>
               <div>
-              <img className='' src="https://lh3.googleusercontent.com/BZplkkrAXupi_CAGBHSy15DCykNV1ifK2WQymvfctHqIClvyucDXoyONGaLOcxjzm_xc6eW5GrXKb-XQ3U_vHbVHGzQUxPT48cqh=w600" alt="" />
+              <img className='rounded-lg' src="https://lh3.googleusercontent.com/ww-PqtSiBG7aCNk4lAqw-ibenlcLKdmqsoCXenDDDagM2W9rQHoDVVzAoQBe9QQhElfy44G5u77ujePfWL8WtUkV05f_bAo6BR7Q=s550" alt="" />
 
               </div>
               <div className='mt-8'>
-              <img className='' src="https://watcher.guru/news/wp-content/uploads/2021/08/unnamed.png.webp" alt="" />
+              <img className='rounded-lg' src="https://lh3.googleusercontent.com/tBUC_BpP5sfLXZ91M7whTk2WmyWU9IslS6NYAmfc2Ga9eIHYvXul1m3-LWyqgH28w2MDgn1kJPtohXE98LIfAqka279ZA6JvhsnE=w295" alt="" />
 
               </div>
               <div className='-mt-8'>
-              <img className='' src="https://uploads-ssl.webflow.com/5ead65b4cd1146b85071bfdf/608ff1624f685407965b0180_Bored%20Ape%200-%20Image%201.png" alt="" />
+              <img className='rounded-lg' src="https://lh3.googleusercontent.com/qFPdh_BZJGiQBajMsbf7Jb2L9NLsk8qngT5rGcLxRi4a-ZatmoK6oxKJBYL78xykwRdJSK6xWE8HnFDtVmPdCpyDM_505gn4WtX5ng=w295" alt="" />
 
               </div>
               <div className=''>
-              <img className='' src="https://pbs.twimg.com/media/E4Lk6qDXIAA9_Z2.png" alt="" />
+              <img className='rounded-lg' src="https://lh3.googleusercontent.com/ts4YygBGO2qNUEidhCTNnFGTm1Gj7XEQievH4AM2CGcKSAtQJywnzP4y5WcxNrilZ9tYY3FcsRl9U6nSlUA6iDYnhuK9vWbANYY0z18=w600" alt="" />
 
               </div>
          
