@@ -65,7 +65,7 @@ function Navigation(props) {
                   <li>
                     <button
                       href="/"
-                      className="inline-flex bg-violet-800 items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                      className="inline-flex bg-gradient-to-r from-pink-800 to-violet-600 items-center justify-center h-12 px-6 font-bold tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                       aria-label="Sign up"
                       title="Sign up"
                     >

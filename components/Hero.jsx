@@ -14,29 +14,28 @@ function Hero(props) {
             
           </h5>
           <p className="mb-6 text-white text-md">
-          Repper is an NFT market is a shared
-          smart contract which is used by multiple 
-          websites to provide the users the best possible experience
-
+          Repper is an NFT marketplace whwew you can buy sell and mint NFTs using
+          the most popular cryptocurrencies such as ETH, SOL,etc. Connect your wallet 
+          and purchase today
 
           </p>
           <hr className="mb-5 border-gray-300" />
           <div className="flex items-center space-x-4">
-           <button className='bg-violet-800 px-10 py-2 rounded-md text-white text-lg font-bold'>
+           <button className='bg-violet-800 px-12 py-4 rounded-md text-white text-lg font-bold  hover:bg-violet-700 transition ease-in-out duration-300 '>
             Discover
            </button>
-           <button className='bg-gradient-to-r from-pink-700 to-violet-600 px-10 py-2 rounded-md text-white text-lg font-bold hover:from-pink-500 hover:to-yellow-500'>
+           <button className='bg-gradient-to-r from-pink-700 to-violet-600 px-12 py-4 rounded-md text-white text-lg font-bold  hover:from-pink-500 transition ease-in-out duration-300 hover:to-yellow-500 '>
             Create
            </button>
           </div>
         </div>
         <div className='grid grid-cols-2 gap-4'>
               <div>
-              <img className='rounded-lg' src="https://lh3.googleusercontent.com/ww-PqtSiBG7aCNk4lAqw-ibenlcLKdmqsoCXenDDDagM2W9rQHoDVVzAoQBe9QQhElfy44G5u77ujePfWL8WtUkV05f_bAo6BR7Q=s550" alt="" />
+              <img className='rounded-lg' src="https://lh3.googleusercontent.com/xKN8lCLXHEqo-TQbA-m6XqpkDTChDIafo_V8s-qWovxxEbHW8Ey5eB1e12dFI6g9zHm0HdkwN0irgQGymqdMNIZlBpKC65Lk7ekC=w600" alt="" />
 
               </div>
               <div className='mt-8'>
-              <img className='rounded-lg' src="https://lh3.googleusercontent.com/tBUC_BpP5sfLXZ91M7whTk2WmyWU9IslS6NYAmfc2Ga9eIHYvXul1m3-LWyqgH28w2MDgn1kJPtohXE98LIfAqka279ZA6JvhsnE=w295" alt="" />
+              <img className='rounded-lg' src="https://img.seadn.io/files/b86dfc02856244dabcf5bc22d9fe9782.png?fit=max&w=600" alt="" />
 
               </div>
               <div className='-mt-8'>
@@ -44,7 +43,7 @@ function Hero(props) {
 
               </div>
               <div className=''>
-              <img className='rounded-lg' src="https://lh3.googleusercontent.com/ts4YygBGO2qNUEidhCTNnFGTm1Gj7XEQievH4AM2CGcKSAtQJywnzP4y5WcxNrilZ9tYY3FcsRl9U6nSlUA6iDYnhuK9vWbANYY0z18=w600" alt="" />
+              <img className='rounded-lg' src="https://lh3.googleusercontent.com/aFdP6Wma_maNLK1VRhQUdY18gAEPed1qit8C8HVFgS2fhs3qRjj0z6Vlu5IbRb6Xyr2vg7sGs7SXJooVUhytQjXriBYxzcBQnGNO0g=w295" alt="" />
 
               </div>
          
