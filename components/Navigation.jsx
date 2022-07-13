@@ -7,8 +7,8 @@ function Navigation(props) {
     
       return (
             
-            <div className="bg-gray-900 shadow-sm">
-            <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+            <div className="bg-neutral-900 shadow-sm">
+            <div className="px-2 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-2">
               <div className="relative flex items-center justify-between">
                 <a
                   href="/"
@@ -17,7 +17,7 @@ function Navigation(props) {
                   className="inline-flex items-center"
                 >
                  
-                  <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 ">
+                  <span className="ml-2 text-2xl font-bold tracking-wide text-gray-100 ">
                     Repper
                   </span>
                 </a>
@@ -65,7 +65,7 @@ function Navigation(props) {
                   <li>
                     <button
                       href="/"
-                      className="inline-flex bg-gradient-to-r from-pink-800 to-violet-600 items-center justify-center h-12 px-6 font-bold tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                      className="inline-flex bg-gradient-to-r from-pink-800 to-violet-600 items-center justify-center h-12 px-6 py-4 font-bold tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline "
                       aria-label="Sign up"
                       title="Sign up"
                     >

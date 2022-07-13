@@ -9,7 +9,7 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className='bg-gray-900'>
+    <div className='bg-neutral-900 '>
      <Navigation/>
      <Hero/>
      <NewReleases/>

@@ -5,6 +5,10 @@ module.exports = {
 
   ],
   theme: {
+    fontFamily:{
+'sans':['Inter'],
+
+    },
     extend: {},
   },
   plugins: [],
