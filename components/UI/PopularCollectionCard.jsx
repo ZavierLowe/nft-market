@@ -72,7 +72,7 @@ function PopularCollectionCard(props) {
                         <img  width={429} height={332} className='col-span-3  rounded-lg   ' src="https://lh3.googleusercontent.com/qFPdh_BZJGiQBajMsbf7Jb2L9NLsk8qngT5rGcLxRi4a-ZatmoK6oxKJBYL78xykwRdJSK6xWE8HnFDtVmPdCpyDM_505gn4WtX5ng=w295" alt="" />
                         <section className='col-span-3 '>
                               <div className=''>
-                                    <h1 className='font-serif text-white font-medium text-2xl px-1 mt-2 mb-2 '>Neo Hunters New</h1>
+                                    <h1 className='font-serif text-white font-bold text-lg px-1 mt-2 mb-2 '>Neo Hunters New</h1>
                               </div>
                               <div className='flex justify-between'>
                                <div className='flex  '>
