@@ -4,6 +4,7 @@ import Hero from '../components/Hero'
 import Navigation from '../components/Navigation'
 import NewReleases from '../components/NewReleases'
 import { ShopAll } from '../components/ShopAll'
+import TopCollections from '../components/TopCollections'
 import PopularCollectionCard from '../components/UI/PopularCollectionCard'
 import Treding from '../components/UI/Treding'
 import styles from '../styles/Home.module.css'
@@ -17,6 +18,7 @@ export default function Home() {
      <PopularCollectionCard/>
      <Treding/>
      <ShopAll/>
+     <TopCollections/>
     </div>
   )
 }
