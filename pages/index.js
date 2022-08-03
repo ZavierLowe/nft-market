@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Hero from '../components/Hero'
 import Navigation from '../components/Navigation'
 import NewReleases from '../components/NewReleases'
+import Product from '../components/Product'
 import { ShopAll } from '../components/ShopAll'
 import TopCollections from '../components/TopCollections'
 import PopularCollectionCard from '../components/UI/PopularCollectionCard'
@@ -19,6 +20,7 @@ export default function Home() {
      <Treding/>
      <ShopAll/>
      <TopCollections/>
+     <Product/>
     </div>
   )
 }
