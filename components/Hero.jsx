@@ -4,17 +4,17 @@ function Hero(props) {
       return (
             <div className='bg-neutral-900'>
                   <div className=" px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-2 lg:py-36">
-      <div className="grid gap-10  lg:grid-cols-2">
+      <div className="grid gap-10 lg:grid-cols-2">
         <div className="flex flex-col justify-center lg:pr-12">
     
           <h1 className="font-sans mb-4 text-6xl text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-violet-600 font-extrabold leading-none">
-            One Platform to explore, collect
+            One Platform to Explore,Collect
             <br className="text-white hidden md:block" />
             and sell NFTs{' '}
             
           </h1>
           <p className="font-sans mb-6 text-white text-md py-4 w-fit">
-          Repper is an NFT marketplace where you can buy sell and mint NFTs using
+          Nebulos is an NFT marketplace where you can buy sell and mint NFTs using
           the most popular cryptocurrencies such as ETH, SOL,etc. Connect your wallet 
           and purchase today.
 
