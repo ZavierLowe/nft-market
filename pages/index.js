@@ -8,7 +8,6 @@ import { ShopAll } from '../components/ShopAll'
 import TopCollections from '../components/TopCollections'
 import PopularCollectionCard from '../components/UI/PopularCollectionCard'
 import Treding from '../components/UI/Treding'
-import WalletModal from '../components/WalletModal'
 
 
 export default function Home() {
@@ -22,7 +21,6 @@ export default function Home() {
      <ShopAll/>
      <TopCollections/>
      <Product/>
-     <WalletModal/>
     </div>
   )
 }
