@@ -128,7 +128,7 @@ function Navigation(props) {
                                             </svg>
                                               </div>
                                               <div>
-                                                <h2 className='text-white text-center'>Phantom</h2>
+                                                <h2 className='text-white text-center font-medium font-sans'>Phantom</h2>
                                               </div>
                                               <div className='bg-neutral-900'>
                                                       
@@ -141,7 +141,7 @@ function Navigation(props) {
                                           </div>
                                           {/* Button Connect 2 */}
                                           <div className=''>
-                                            <button className='bg-neutral-800 w-full rounded-md grid grid-cols-3 items-center p-6  '>
+                                            <button className='bg-neutral-800 w-full rounded-md grid grid-cols-3 items-center p-6'>
                                               <div>
                                               <svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20C15.5228 20 20 15.5228 20 10Z" fill="url(#paint0_radial_505_19)"/>
@@ -157,10 +157,10 @@ function Navigation(props) {
                                              
                                               </div>
                                               <div>
-                                                <h2 className='text-white text-center'>WalletConnect</h2>
+                                                <h2 className='text-white text-center font-medium'>WalletConnect</h2>
                                               </div>
                                               <div className=' w-[20] h-[20]'>
-                                                 <div className='rounded-full  w-[20] h-[20'>
+                                                 <div className='rounded-full  w-[20] h-[20]'>
                                                   </div>    
                                               </div>
                                         
@@ -178,7 +178,7 @@ function Navigation(props) {
                                              
                                               </div>
                                               <div>
-                                                <h2 className='text-white text-center'>Coinbase Wallet</h2>
+                                                <h2 className='text-white text-center font-medium'>Coinbase Wallet</h2>
                                               </div>
                                               <div className='w-[20] h-[20]'>
                                                  <div className='rounded-full  w-[20] h-[20]'>
@@ -199,7 +199,7 @@ function Navigation(props) {
                                              
                                               </div>
                                               <div>
-                                                <h2 className='text-white text-center'>MetaMask</h2>
+                                                <h2 className='text-white text-center font-medium'>MetaMask</h2>
                                               </div>
                                               <div className=' w-[20] h-[20]'>
                                                  <div className='rounded-full  w-[20] h-[20'>
