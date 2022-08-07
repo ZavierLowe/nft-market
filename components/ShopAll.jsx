@@ -4,7 +4,7 @@ export const ShopAll = () => {
   return (
     <div className='container px-24 py-16 mx-auto'>
       
-      <div className='grid grid-cols-4 gap-x-6'>
+      <div className='grid grid-cols-1 gap-x-6 lg:grid-cols-4'>
 
             {/* Card 1 */}
 

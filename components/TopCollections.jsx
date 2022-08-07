@@ -140,33 +140,36 @@ const TopCollections = () => {
             }
       ]
   return (
-    <div className='mx-auto p-20 '>
+    <div className='container mx-auto p-2'>
 
       <h1 className='text-center text-white text-2xl font-bold mb-10'>Top Collections</h1>
-      <div className='grid grid-cols-3 grid-rows-3 gap-y-10 mx-auto'>
+      <div className='mx-auto grid grid-cols-1 grid-rows-1 gap-y-3 lg:grid-cols-3'>
 
             {products.map ((product) =>( 
 
 
 
-            <a key={product} className="flex mx-auto p-4 cursor-pointer shadow-white hover:shadow-2xl hover:bg-neutral-800 rounded-lg   transition-all ease-in-out duration-300 ">
+            <a key={product} className="flex  mx-auto p-4 cursor-pointer shadow-white hover:shadow-2xl hover:bg-neutral-800 rounded-lg   transition-all ease-in-out duration-300 ">
                   <div className='flex text-white justify-center'>
-                    <div className='flex items-center'>
+                    <div className='flex items-center '>
+                        <span className='text-sm'>
                         {product.id}
+
+                        </span>
                     </div>
                   </div>
-                  <div className='flex ml-4 w-14'>
+                  <div className='flex ml-2  '>
 
-                  <img className='rounded-md object-cover'src={product.imgSrc} alt="" />
+                  <img className='rounded-md object-cover 'src={product.imgSrc} alt="" />
                   </div>
                   <div className='ml-2 '>
-                        <div className='w-32'>
+                        <div className='w-full truncate'>
 
-                  <h1 className='text-white font-bold text-sm truncate'>{product.nftname}</h1>
+                  <h1 className='text-white font-bold text-sm w-full block'>{product.nftname}</h1>
                         </div>
-                  <div className='flex'>
-                  <p className='text-gray-400 mt-3 text-sm'>Floor Price: </p>
-                  <svg width={24} height={24} className='mt-2.5' clipRule="evenodd" fillRule="evenodd" strokeLinejoin="round" strokeMiterlimit="1.41421" viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg"><g fillRule="nonzero" transform="matrix(.781253 0 0 .781253 180 37.1453)"><path d="m127.961 0-2.795 9.5v275.668l2.795 2.79 127.962-75.638z" fill="#343434"/><path d="m127.962 0-127.962 212.32 127.962 75.639v-133.801z" fill="#8c8c8c"/><path d="m127.961 312.187-1.575 1.92v98.199l1.575 4.601 128.038-180.32z" fill="#3c3c3b"/><path d="m127.962 416.905v-104.72l-127.962-75.6z" fill="#8c8c8c"/><path d="m127.961 287.958 127.96-75.637-127.96-58.162z" fill="#141414"/><path d="m.001 212.321 127.96 75.637v-133.799z" fill="#393939"/></g></svg>
+                  <div className='flex items-center w-full'>
+                  <p className='text-gray-400 mt-3 text-sm '>Floor Price:</p>
+                  <svg width={24} height={24} className='' clipRule="evenodd" fillRule="evenodd" strokeLinejoin="round" strokeMiterlimit="1.41421" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fillRule="nonzero" transform="matrix(.781253 0 0 .781253 180 37.1453)"><path d="m127.961 0-2.795 9.5v275.668l2.795 2.79 127.962-75.638z" fill="#343434"/><path d="m127.962 0-127.962 212.32 127.962 75.639v-133.801z" fill="#8c8c8c"/><path d="m127.961 312.187-1.575 1.92v98.199l1.575 4.601 128.038-180.32z" fill="#3c3c3b"/><path d="m127.962 416.905v-104.72l-127.962-75.6z" fill="#8c8c8c"/><path d="m127.961 287.958 127.96-75.637-127.96-58.162z" fill="#141414"/><path d="m.001 212.321 127.96 75.637v-133.799z" fill="#393939"/></g></svg>
                   <p className='mt-2.5 text-gray-400'>{product.floorprice}</p>
                   
                   </div>
@@ -177,10 +180,10 @@ const TopCollections = () => {
                   </div>
                   <div className='flex flex-col ml-14'>
 
-                  <p className='text-green-400 text-sm ml-3'>+{product.dailychange}%</p>
-                  <div className='flex'>
-                  <svg className='mt-3' width={24} height={24} clipRule="evenodd" fillRule="evenodd" strokeLinejoin="round" strokeMiterlimit="1.41421" viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg"><g fillRule="nonzero" transform="matrix(.781253 0 0 .781253 180 37.1453)"><path d="m127.961 0-2.795 9.5v275.668l2.795 2.79 127.962-75.638z" fill="#343434"/><path d="m127.962 0-127.962 212.32 127.962 75.639v-133.801z" fill="#8c8c8c"/><path d="m127.961 312.187-1.575 1.92v98.199l1.575 4.601 128.038-180.32z" fill="#3c3c3b"/><path d="m127.962 416.905v-104.72l-127.962-75.6z" fill="#8c8c8c"/><path d="m127.961 287.958 127.96-75.637-127.96-58.162z" fill="#141414"/><path d="m.001 212.321 127.96 75.637v-133.799z" fill="#393939"/></g></svg>
-                  <p className='text-gray-400 text-base font-bold mt-3'>{product.avgprice}</p>
+                  <p className='text-green-400 text-sm ml-4'>+{product.dailychange}%</p>
+                  <div className='grid grid-cols-2 space-x-1'>
+                  <svg className='mt-3' width={20} height={20} clipRule="evenodd" fillRule="evenodd" strokeLinejoin="round" strokeMiterlimit="1.41421" viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg"><g fillRule="nonzero" transform="matrix(.781253 0 0 .781253 180 37.1453)"><path d="m127.961 0-2.795 9.5v275.668l2.795 2.79 127.962-75.638z" fill="#343434"/><path d="m127.962 0-127.962 212.32 127.962 75.639v-133.801z" fill="#8c8c8c"/><path d="m127.961 312.187-1.575 1.92v98.199l1.575 4.601 128.038-180.32z" fill="#3c3c3b"/><path d="m127.962 416.905v-104.72l-127.962-75.6z" fill="#8c8c8c"/><path d="m127.961 287.958 127.96-75.637-127.96-58.162z" fill="#141414"/><path d="m.001 212.321 127.96 75.637v-133.799z" fill="#393939"/></g></svg>
+                  <p className='text-gray-400 text-base font-bold '>{product.avgprice}</p>
 
                   </div>
 

@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Link from 'next/link';
 import CoinbaseLogo from '../public/Coinbase Wallet Logo.png';
 import Image from 'next/image'
+import { transpile } from 'typescript';
 
 
 
@@ -9,16 +10,18 @@ function Navigation(props) {
 
       const [isMenuOpen, setIsMenuOpen] = useState(false)
       const [showModal , setShowModal ] = useState(false)
+      const [openDrawer , setOpenDrawer] = useState(false)
+      const toggle = () => setOpenDrawer(openDrawer => !openDrawer)
     
       return (
             
-            <div className="bg-neutral-900 shadow-sm">
-            <div className="px-2 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-2">
-              <div className="relative flex items-center justify-between">
+            <div className="bg-neutral-900 shadow-lg sticky top-0">
+            <div className=" mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-2">
+              <div className="px-4 py-4 flex items-center justify-between ">
                 <a
                   href="/"
-                  aria-label="Company"
-                  title="Company"
+                  aria-label="Nebulous"
+                  title="Nebulous"
                   className="inline-flex items-center"
                 >
                  
@@ -239,7 +242,8 @@ function Navigation(props) {
                     aria-label="Open Menu"
                     title="Open Menu"
                     className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline"
-                    onClick={() => setIsMenuOpen(true)}
+                    onClick={toggle}
+                    
                   >
                     <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
                       <path
@@ -256,9 +260,9 @@ function Navigation(props) {
                       />
                     </svg>
                   </button>
-                  {isMenuOpen && (
-                    <div className="absolute top-0 left-0 w-full">
-                      <div className="p-5 bg-white border rounded shadow-sm">
+                  {setOpenDrawer && (
+                    <div className={`z-10 absolute w-screen h-screen top-0 left-0 translate-x-full overflow-hidden ${openDrawer === true ? 'translate-x-0 w-screen transform transition duration-500 ease-in-out': '-translate-x-full transform transition duration-500 ease-in-out'}`}>
+                      <div className=" p-6 h-screen bg-neutral-900 border shadow-sm">
                         <div className="flex items-center justify-between mb-4">
                           <div>
                             <a
@@ -267,23 +271,9 @@ function Navigation(props) {
                               title="Company"
                               className="inline-flex items-center"
                             >
-                              <svg
-                                className="w-8 text-deep-purple-accent-400"
-                                viewBox="0 0 24 24"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeMiterlimit="10"
-                                stroke="currentColor"
-                                fill="none"
-                              >
-                                <rect x="3" y="1" width="7" height="12" />
-                                <rect x="3" y="17" width="7" height="6" />
-                                <rect x="14" y="1" width="7" height="6" />
-                                <rect x="14" y="11" width="7" height="12" />
-                              </svg>
-                              <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                                Company
+                             
+                              <span className="text-xl font-bold tracking-wide text-white uppercase">
+                                Nebulous
                               </span>
                             </a>
                           </div>
@@ -292,7 +282,7 @@ function Navigation(props) {
                               aria-label="Close Menu"
                               title="Close Menu"
                               className="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                              onClick={() => setIsMenuOpen(false)}
+                              onClick={toggle}
                             >
                               <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
                                 <path
@@ -310,9 +300,9 @@ function Navigation(props) {
                                 href="/"
                                 aria-label="Our product"
                                 title="Our product"
-                                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
                               >
-                                Product
+                                Discover
                               </a>
                             </li>
                             <li>
@@ -320,9 +310,9 @@ function Navigation(props) {
                                 href="/"
                                 aria-label="Our product"
                                 title="Our product"
-                                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
                               >
-                                Features
+                                Activity
                               </a>
                             </li>
                             <li>
@@ -330,9 +320,9 @@ function Navigation(props) {
                                 href="/"
                                 aria-label="Product pricing"
                                 title="Product pricing"
-                                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
                               >
-                                Pricing
+                                Resources
                               </a>
                             </li>
                             <li>
@@ -340,19 +330,19 @@ function Navigation(props) {
                                 href="/"
                                 aria-label="About us"
                                 title="About us"
-                                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
                               >
-                                About us
+                                Create
                               </a>
                             </li>
                             <li>
                               <a
                                 href="/"
-                                className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                                className="inline-flex items-center justify-center w-full h-12 px-6 tracking-wide text-white font-bold bg-gradient-to-r from-pink-800 to-violet-600 transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                                 aria-label="Sign up"
                                 title="Sign up"
                               >
-                                Sign up
+                                Connect Wallet
                               </a>
                             </li>
                           </ul>

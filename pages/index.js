@@ -12,9 +12,9 @@ import Treding from '../components/UI/Treding'
 
 export default function Home() {
   return (
-    <div className='bg-neutral-900 '>
-     <Navigation/>
-     <Hero/>
+    <div className='bg-neutral-900 container mx-auto'>
+     <Navigation className='z-1' />
+     <Hero />
      <NewReleases/>
      <PopularCollectionCard/>
      <Treding/>
