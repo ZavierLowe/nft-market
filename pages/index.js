@@ -12,7 +12,7 @@ import Treding from '../components/UI/Treding'
 
 export default function Home() {
   return (
-    <div className='bg-neutral-900 container mx-auto'>
+    <div className='bg-neutral-900 mx-auto'>
      <Navigation className='z-1' />
      <Hero />
      <NewReleases/>

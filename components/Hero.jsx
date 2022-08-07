@@ -2,8 +2,8 @@ import React from 'react';
 
 function Hero(props) {
       return (
-            <div className='bg-neutral-900 container'>
-                  <div className="px-4 py-4 mx-auto container max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-2 lg:py-36">
+            <div className='bg-neutral-900 '>
+                  <div className="px-4 py-4 mx-auto container max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-4 lg:py-36">
       <div className="grid gap-10 lg:grid-cols-2">
         <div className="flex flex-col justify-center lg:pr-12">
     
